@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>银浆组数据库文件上传系统</title>
+        <link rel="stylesheet" type="text/css" href="./css/yinjiang.css" />
+        <link rel="stylesheet" type="text/css" href="./css/style1.css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+        <script src="js/jquery.min.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+        <meta name="keywords" content="File Uploader Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+        Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    </head>
+
+    <body>
+		<div class="container">
+			<header>
+                <h1>银浆组数据库</h1>
+                <h2>数据上传与程序下载页面（在线修改账号密码均为yinjiang）</h2>
+			</header>
+                <div class="container2">
+                <div class="container_buttons">
+                <p>实验数据上传</p>
+                <div class="container_buttons_">
+                    <div class="container_buttons3">
+                    <p>
+						银浆组数据记录<span>&nbsp;&nbsp;</span>
+                        <a href="./uploads/cell/yinjiangupload.html" class="a_demo_one">
+                            上传
+                        </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="../../../php/index.php" class="a_demo_one">
+                            在线修改
+                        </a>
+                    </p>
+                    </div>
+                </div>
+                <p>测试数据处理</p>
+                <div class="container_buttons_">
+                    <div class="container_buttons2">
+                    <p>
+						
+                        <a href="../../uploads/IVUpload/IVCurve.php" class="a_demo_one">
+                            IV数据处理
+                        </a>
+                    </p>
+                    </div>
+                    
+                    <div class="container_buttons2">
+					<p>
+                        
+						<a href="../YJUpload/YJ.php" class="a_demo_one">
+                            银浆流变数据处理
+                        </a>
+                    </p>
+                    </div>
+                    
+                    <div class="container_buttons2">
+					<p>
+                       
+						<a href="../YJXUpload/YJX.php" class="a_demo_one">
+                            有机相流变数据处理
+                        </a>
+                    </p>
+                    </div> 
+                </div>    
+                <div class="container_buttons_">
+                    <div class="container_buttons2">
+                    <p>
+						
+                        <a href="" class="a_demo_one1">
+                            备用
+                        </a>
+					</p>
+                    </div>
+                    <div class="container_buttons2">
+					<p>	
+                        
+						<a href="" class="a_demo_one1">
+                            备用
+                        </a>
+                    </p>
+                    </div>
+                    <div class="container_buttons2">
+					<p>
+                        
+						<a href="" class="a_demo_one1">
+                            备用
+                        </a>
+                    </p>
+                    </div>
+                </div>    
+                <div class="container_buttons_">
+                    <div class="container_buttons2">
+                    <p>
+						
+                        <a href="" class="a_demo_one1">
+                            备用
+                        </a>
+					</p>
+                    </div>
+                    <div class="container_buttons2">
+					<p>	
+                        
+						<a href="" class="a_demo_one1">
+                            备用
+                        </a>
+                    </p>
+                    </div>
+                    <div class="container_buttons2">
+					<p>
+                        
+						<a href="" class="a_demo_one1">
+                            备用
+                        </a>
+                    </p>
+                    </div>
+                </div>    
+                </div>
+                
+                <div class="container_buttons">
+                <div class="container_buttons_">
+                <div class="upload">
+
+                        <div class="login-form">
+
+                            <form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+
+                                <div id="drop">
+                                    <a>银浆组数据记录上传</a>
+                                    <input type="file" name="upl" multiple />
+                                </div>
+
+                                <ul>
+                                <!-- The file uploads will be shown here -->
+                                </ul>
+
+                            </form>
+
+                        </div>
+                            
+                    <!-- JavaScript Includes -->
+                        <script src="js/jquery.knob.js" charset="utf-8"></script>
+                    <!-- JavaScript Includes -->
+
+                    <!-- jQuery File Upload Dependencies -->
+                        <script src="js/jquery.ui.widget.js" charset="utf-8"></script>
+                        <script src="js/jquery.iframe-transport.js" charset="utf-8"></script>
+                        <script src="js/jquery.fileupload.js" charset="utf-8"></script>
+                    <!-- jQuery File Upload Dependencies -->
+                        
+                    <!-- Main JavaScript file -->
+                        <script src="js/script.js" charset="utf-8"></script>
+                    <!-- Main JavaScript file -->
+
+                    <div class="button">
+
+                    <div class="cancel"><a href="yinjiangupload.html">Cancel</a></div>
+                    <div class="done" ><a href="../../yinjiang.php" onclick="store()">Done</a></div>
+
+                    <div class="clear"> </div>
+
+                    </div>
+                    <p>PS:仅支持xls、xlsx格式数据上传</p>
+                </div>
+                </div>
+              
+                </div>
+            </div>  
+        </div>
+	<script type="text/javascript">
+    function store(){
+        $.ajax({
+        url: 'store.php'      
+        })
+        alert("上传完成!");
+        }
+    </script>	
+    </body>
+</html>
